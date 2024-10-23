@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --primary-color-orange: hsl(31, 77%, 52%);
+    --primary-color-cyan: hsl(184, 100%, 22%);
+    --primary-color-dark-cyan: hsl(179, 100%, 13%);
+    --grey: hsl(0, 0%, 100%, 0.75);
+    --white: hsl(0, 0%, 95%);
+}
+
+body {
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+h1 { 
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--white);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.625;
+    color: var(--grey);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.grid article {
+    padding: 1.6rem;
+
+}
+
+.grid article:nth-child(1) {
+    background-color: var(--primary-color-orange);
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+}
+
+
+.grid article:nth-child(2) {
+    background-color: var(--primary-color-cyan); 
+}
+
+
+.grid article:nth-child(3) {
+  background-color: var(--primary-color-dark-cyan);
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+
+.button-sedans {
+    padding: 0.8rem 1rem;
+    font-family:'Lexend Deca', sans-serif;;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    color: var(--primary-color-orange);
+}
+
+.button-suv {
+    padding: 0.8rem 1rem;
+    font-family:'Lexend Deca', sans-serif;;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    color: var(--primary-color-cyan);
+}
+
+.button-luxury {
+    padding: 0.8rem 1rem;
+    font-family:'Lexend Deca', sans-serif;;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    color: var(--primary-color-dark-cyan);
+}
+
+.button-sedans:hover {
+    background-color: var(--primary-color-orange);
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.button-suv:hover {
+    background-color: var(--primary-color-cyan);
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.button-luxury:hover {
+    background-color: var(--primary-color-dark-cyan);
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
